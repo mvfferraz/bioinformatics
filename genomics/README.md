@@ -65,9 +65,3 @@ Perform quality control (QC) on raw sequencing reads downloaded in Lesson 1 and 
     cd resultados_FASTQC
     
     multiqc .
-
-
-    
-
-
-
