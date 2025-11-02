@@ -28,3 +28,46 @@ Learn how to download raw genomic sequencing data from NCBI and perform initial 
 
 **Notes:**  
 This lesson demonstrates practical steps for genomic data retrieval, organization, and quality control, all based on a real published outbreak study.
+
+---
+
+# Genomics Module - Lesson 2
+
+**Objective:**  
+Perform quality control (QC) on raw sequencing reads downloaded in Lesson 1 and identify potential issues before downstream analysis.
+
+**Tools:**  
+- [FastQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/) (GUI or terminal version)  
+- [MultiQC](https://multiqc.info/) (for consolidating multiple reports)
+
+**Steps:**  
+1. **Install FastQC**  
+   - Download from [FastQC download page](https://www.bioinformatics.babraham.ac.uk/projects/download.html#fastqc)  
+   - Ensure Java Runtime Environment (JRE) is installed for Mac, Linux, or Windows.
+2. **Run FastQC (GUI)**  
+   - Open the FastQC application, select the `.fastq.gz` files from Lesson 1, and start the analysis.
+3. **Run FastQC (Terminal)**  
+   ```bash
+   # Navigate to Lesson 2 folder
+   cd ~/Documents/Bioinfo_course/DNA/Aula_5
+
+   # Create output directory for results
+   mkdir resultados_FASTQC
+
+   # Run FastQC for one or multiple files
+   fastqc -o resultados_FASTQC/ ../Aula_4/data/*.fastq.gz
+
+4. **Visualize results**
+
+   Open the generated .html files in resultados_FASTQC/ with a web browser
+
+    ```bash
+    cd resultados_FASTQC
+    
+    multiqc .
+
+
+    
+
+
+
