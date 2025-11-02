@@ -10,12 +10,19 @@ The course is divided into three main modules:
 ## Repository Structure
 
 bioinformatics/
+
 ├── genomics/
+
 │ └── notes.txt
+
 ├── transcriptomics/
+
 │ └── notes.txt
+
 ├── epigenetics/
+
 │ └── notes.txt
+
 └── README.md
 
 
